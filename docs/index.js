@@ -42,4 +42,29 @@ textarea.addEventListener("input", function (event) {
 
 button.addEventListener("click", function () {
   textarea.value = "";
+
+
+  document.querySelectorAll(
+    ".item"
+  )[0].textContent = `Recuento de palabras: ${0}`;
+
+  document.querySelectorAll(
+    ".item"
+  )[1].textContent = `Recuento de caracteres: ${0}`;
+
+  document.querySelectorAll(
+    ".item"
+  )[2].textContent = `Recuento de caracteres excluyendo espacios y signos de puntuacion: ${0}`;
+
+  document.querySelectorAll(
+    ".item"
+  )[3].textContent = `Recuento de numeros: ${0}`;
+
+  document.querySelectorAll(
+    ".item"
+  )[4].textContent = `Suma total de numeros: ${0}`;
+
+  document.querySelectorAll(
+    ".item"
+  )[5].textContent = `Longitud media de las palabras: ${0}`;
 });
