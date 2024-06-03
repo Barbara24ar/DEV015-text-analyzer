@@ -1,12 +1,20 @@
 const analyzer = {
   getWordCount: (text) => {
     text = text.trim();
-    if (text === "") {
+    if (text === '') {
       return 0;
     }
+
+    // Dividimos la cadena en palabras usando espacios como delimitadores
     const words = text.split(/\s+/);
-    return words.length;
+
+    // Filtramos las palabras para eliminar las que contienen solo números words.filter(...)
+    // crea un nuevo array que contiene solo los elementos del array words que pasan una condición especificada en una función.
+    const filteredWords = words.filter(word => !/^\d+$/.test(word));
+
+    return filteredWords.length;
   },
+
   getCharacterCount: (text) => {
     const numero_de_caracteres = text.length;
     return numero_de_caracteres;
