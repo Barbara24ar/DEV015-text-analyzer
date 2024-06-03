@@ -40,7 +40,7 @@ const analyzer = {
     for (const word of words) {
       totalCharacters += word.length;
     }
-    return totalCharacters / words.length;
+    return parseFloat((totalCharacters / words.length).toFixed(2));
   },
   getNumberCount: (text) => {
     const numbers = text.match(/\b-?\d+(\.\d+)?\b/g);
