@@ -1,10 +1,5 @@
-ul {
-    list-style-type: none;
-}
-
 .item {
     margin: 0%;
-    background: none;
     border: 0cm;
     box-sizing: border-box;
     padding: 16px;
@@ -27,7 +22,6 @@ ul {
     border-bottom: none;
     font-family: "Inter", sans-serif;
 }
-
 
 footer {
     margin-top: 20px;
